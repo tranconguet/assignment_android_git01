@@ -20,6 +20,12 @@ public class Main {
                  sum1 -= numbers[i];
              }
              return sum1;
+         case multiple:
+             int sum2 = 1;
+             for (int i = 1; i < numbers.length; i++) {
+                 sum2 *= numbers[i];
+             }
+             return sum2;
          default:
              return 0;
      }
@@ -28,7 +34,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         System.out.println("Hello world");
-        System.out.println(calculate(Operator.subtract, 10,12,12,14));
+        System.out.println(calculate(Operator.multiple, 1,2,3,4));
     }
 };
 
