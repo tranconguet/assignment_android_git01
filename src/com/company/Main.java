@@ -26,10 +26,12 @@ public class Main {
                  sum2 *= numbers[i];
              }
              return sum2;
+         case divide:
+             return 123;
          default:
              return 0;
      }
-    };
+    }
 
     public static void main(String[] args) {
 	// write your code here
